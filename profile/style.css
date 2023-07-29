@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Mulish;
+    background-color: #f8fafc;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+h1{
+    color:#625bf7 ;
+}
+
+.toptext{
+    text-align: center;
+    margin-top: 7%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    height: 21em;
+    margin-left: 35%;
+    margin-top: 7%;
+    width: 30%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+
+  .fa-user{
+    height: 70px;
+  }
+
+  .userImage{
+   
+    margin-top: 20px;
+    row-gap: 2%;
+  }
+
+  .user-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .button{
+    margin-top: 2%;
+  }
+
+
+  #logOut{
+   
+    height: 45px;
+    border: #4e46ed;
+    background-color: #4e46ed;
+    border-radius: 5px;
+    width: 20rem;
+    color:#fff ;
+}
+
+
+  
