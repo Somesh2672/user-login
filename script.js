@@ -1,6 +1,5 @@
 const signupBtn = document.getElementById('signupBtn');
 const firstName = document.getElementById('firstName');
-const lastName = document.getElementById('lastName');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
@@ -17,10 +16,9 @@ function checkIfUserExist(email){
     else return false;
 }
 
-function saveUser(fName,lName,emailInput,passwordInput){
+function saveUser(fName,emailInput,passwordInput){
     let userObj ={
         firstName: fName, // firstName.value
-        lastName: lName,
         email: emailInput,
         password: passwordInput,
     }
@@ -33,9 +31,8 @@ function saveUser(fName,lName,emailInput,passwordInput){
 
     //  write a logic that this user is signed in
     // session storage will delete data after tab is closed
-    sessionStorage.setItem('loggenInUser',JSON.stringify(userObj));
+    sessionStorage.setItem('loggedInUser',JSON.stringify(userObj));
     firstName.value='';
-    lastName.value='';
     email.value='';
     password.value='';
     confirmPassword.value='';
@@ -49,7 +46,6 @@ signupBtn.addEventListener('click', (event) => {
     event.preventDefault();
     // if any of my field is empty
     if (firstName.value.trim() === '' ||
-        lastName.value.trim() === '' ||
         email.value.trim() === '' ||
         password.value.trim() === '' ||
         confirmPassword.value.trim() === '') {
@@ -66,10 +62,10 @@ signupBtn.addEventListener('click', (event) => {
                 if (checkIfUserExist(email.value)) {
                     alert('email is linked with other account');
                 } else {
-                    saveUser(firstName.value, lastName.value, email.value, password.value);
+                    saveUser(firstName.value, email.value, password.value);
                 }
             } else {
-                saveUser(firstName.value, lastName.value, email.value, password.value);
+                saveUser(firstName.value, email.value, password.value);
             }
         }
     }
