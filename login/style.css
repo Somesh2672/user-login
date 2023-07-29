@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Mulish;
+    background-color: #f8fafc;
+    color: #333333;
+}
+
+.greeting{
+    margin: 5%;
+}
+
+.logIn{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    height: 22em;
+    margin-left: 30%;
+    margin-top: 7%;
+    width: 40%;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+
+  .logIn form{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .email{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+}
+
+input{
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#signinBtn{
+    width: 100%;
+    height: 45px;
+    border: #4e46ed;
+    background-color: #4e46ed;
+    border-radius: 5px;
+}
+
+#signUpRedirect{
+    border: none;
+    outline: none;
+}
+
+.noAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
