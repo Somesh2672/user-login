@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sign in</title>
-</head>
+  </head>
 
-<body>
-    
+  <body>
+    <div class="header">
+      <h1>User Login form</h1>
+      <div class="noAccount">
+        <button id="signUpRedirect">Sign Up</button>
+      </div>
+    </div>
+
     <div class="logIn">
-        <div class="greeting">
-            <p>Welcome back! 👋</p>
-            <h2>Sign in to your account</h2>    
+      <div class="greeting">
+        <p>Welcome back! 👋</p>
+        <h2>Sign in to your account</h2>
+      </div>
+      <form>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
         </div>
-        <form>
-            <div class="email">
-                <label for="email">Email</label>
-                <input type='email' id="email" />
-            </div>
-            <br />
-            <div class="password">
-                <label for="password">Password</label>
-                <input type='password' id="password" />
-            </div>
-            <br />
-            <br />
-            <button type="submit" id="signinBtn">Sign in</button>
-        </form>
+        <br />
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+        <br />
+        <br />
+        <button type="submit" id="signinBtn">Sign in</button>
+      </form>
     </div>
     <br />
 
-    <div class="noAccount">
-        <button id="signUpRedirect">Not a User? sign up</button>
-    </div>
+    <!-- <div class="noAccount">
+      <button id="signUpRedirect">Not a User? sign up</button>
+    </div> -->
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

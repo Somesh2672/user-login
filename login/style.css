@@ -5,8 +5,8 @@
     margin: 0;
     padding: 0;
     font-family:Mulish;
-    background-color: #f8fafc;
-    color: #333333;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .greeting{
@@ -17,10 +17,10 @@
     display: flex;
     flex-direction: column;
     position: sticky;
-    height: 22em;
-    margin-left: 30%;
+    height: 23em;
+    margin-left: 20%;
     margin-top: 7%;
-    width: 40%;
+    width: 60%;;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   }
 
@@ -45,25 +45,92 @@
 
 input{
     height: 30px;
-    border: 1px solid grey;
-    border-radius: 5px;
+    /* border: 1px solid grey; */
+    border: none;
+    border-bottom: 3px solid grey;
+    outline: none;
 }
 
 #signinBtn{
-    width: 100%;
+    width: 30%;
     height: 45px;
-    border: #4e46ed;
-    background-color: #4e46ed;
+    background-color: #ffffff;
     border-radius: 5px;
+    color: black;
 }
 
-#signUpRedirect{
-    border: none;
-    outline: none;
+#signinBtn:hover{
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.8s;
+    margin: 1em;
 }
+
 
 .noAccount{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    margin: 0.5rem 1rem 1.5rem 1.5rem;
+    border-bottom: 3px solid goldenrod;
+
+}
+
+.header .noAccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#signUpRedirect{
+    position: relative;
+    background-color: goldenrod;
+    border: none;
+    color: #FFFFFF;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    height: 25px;
+    text-justify: center;
+}
+
+#signUpRedirect:hover{
+    position: relative;
+    width: 100px;
+    background-color: rgb(216, 85, 4);;
+    transform: translate3d(0px, 0%, 0px);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .05em;
+    transition-delay: .6s;
+    overflow: hidden;
+
 }
